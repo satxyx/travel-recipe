@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Vidaloka&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button {
+  padding: 6px 8px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: 'Vidaloka', serif;
+}
+
+h2 {
+  font-family: 'Vidaloka', serif;
+
+}
+
+/* SITEWIDE *********************************************** */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #121212;
+
+}
+
+/* HEADER ************************************************* */
+.header {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  font-family: 'Vidaloka', serif;
+
+}
+
+.navList {
+  display: flex;
+}
+
+.navLink {
+  display: block;
+  padding: 20px;
+}
+
+.navLink:hover {
+  color: orange;
+}
+
+.main-page {
+  display: flex;
+}
+
+/* SIDEBAR ************************************************* */
+.sidebar {
+  width: 240px;
+  height:100vh;
+  background-color: #121212;
+  min-width: 300px;
+  font-family: 'Vidaloka', serif;
+
+}
+
+.sidebar-card {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #272727;
+  color:white;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 10px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.434) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(107, 52, 52, 0.8) 0%,rgba(0,0,0,.9) 80%);
+
+}
+
+.sidebar-card:hover {
+  background: #121212;
+}
+
+/* category INFO *********************************************** */
+.category-info {
+  flex-grow: 1;
+  font-family: 'Vidaloka', serif;
+  background-color:#121212;
+
+}
+
+.category-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin:10px;
+  margin-right:15px;
+  margin-left:15px;
+  background-color:white;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 10px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.434) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(107, 52, 52, 0.8) 0%,rgba(0,0,0,.9) 80%);
+
+
+}
+
+.category-content {
+  padding-right: 15px;
+
+}
+
+.category-img {
+  width: 525px;
+  max-width: 50%;
+  border-radius: 10px;
+  mask-image: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1));
+
+}
+
+/* RECIPES SECTION ******************************************* */
+.recipes-section {
+  cursor: pointer;
+  padding:10px;
+  background: #121212;
+  
+}
+
+.add-recipe-button {
+  margin: 15px;
+  padding: 7px 10px;
+  font-family: Roboto;
+  font-weight: 100px;
+  background:#121212;
+  border:none;
+  color:white
+}
+
+.recipe {
+  padding: 18px;
+  display: flex;
+  justify-content:space-around;
+  padding: 10px;
+  background-color: #272727;
+  color: white;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 10px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.434) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(107, 52, 52, 0.8) 0%,rgba(0,0,0,.9) 80%);
+
+}
+
+.recipe-container {
+  padding: 10px;
+}
+
+.recipe:hover {
+  background: #121212;
+}
+
+.recipe-img {
+  width: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  mask-image: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1));
+
+}
+
+/* RECIPE ADD PAGE ******************************************** */
+.form {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  width: 100px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #aaa;
+  padding: 5px;
+}
+
+.form-input-body {
+  height: 200px;
+}
+/* SHOW RECIPE PAGE **************************************** */
+.show-recipe-page {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.recipe-category-name,
+.recipe-title,
+.recipe-body {
+  margin-bottom: 10px;
+
+}
